@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  font-size: 14px;
+}
+
+.header .logo {
+  width: 84px;
+  height: 27px;
+}
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.menu-wrapper > * {
+  margin: 0 15px;
+}
+
+.header-item {
+  cursor: pointer;
+  color: hsl(0, 0%, 41%);
+}
+
+.header-item:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.sign-up {
+  display: flex;
+}
+
+.sign-up > * {
+  margin: 0 10px;
+}
+
+.btn-register {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.btn-register:hover {
+  border: 2px solid  hsl(0, 0%, 8%);
+  color:  hsl(0, 0%, 8%);
+}
+
+.btn-login {
+  border: none;
+  outline: none;
+  color: hsl(0, 0%, 41%);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+    color:  hsl(0, 0%, 8%);
+}
