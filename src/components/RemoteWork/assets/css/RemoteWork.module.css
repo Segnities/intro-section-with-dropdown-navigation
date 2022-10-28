@@ -1,9 +1,9 @@
 .content-wrapper {
     display: flex;
     flex-direction: row;
-    padding-top: 6vh;
+    padding-top: 9vh;
     padding-bottom: 5vh;
-    padding-left: 13vw;
+    padding-left: 12vw;
     padding-right: 8vw;
     margin-bottom: 10vh;
 }

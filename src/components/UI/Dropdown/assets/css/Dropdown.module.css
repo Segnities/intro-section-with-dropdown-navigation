@@ -66,6 +66,10 @@
     cursor: pointer;
 }
 
+.dropdown-menu-item:hover {
+    color: hsl(0, 0%, 41%);
+}
+
 .dropdown-menu-item p {
     font-size: 13px;
     margin-left: 5px;
