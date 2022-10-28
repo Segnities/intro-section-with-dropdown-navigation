@@ -1,35 +1,49 @@
 .dropdown-root {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dropdown-menu {
+    max-width: 160px;
+    position: absolute;
+    padding: 10px 30px;
+    top: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    align-self: auto;
+    flex-direction: column;
+    box-shadow: 4px 5px 40px 2px rgba(0, 0, 0, 0.125);
 }
 
 .dropdown-control {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  background-color: transparent;
-  transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
 }
 
 .dropdown-arrow {
-  border-color: #999 transparent transparent;
-  border-style: solid;
-  border-width: 5px 5px 0;
-  display: block;
-  height: 0;
-  position: absolute;
-  right: 10px;
-  top: 14px;
+    border-color: #999 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 14px;
 }
 
 .dropdown-placeholder {
-  cursor: pointer;
-  font-size: 0.9rem;
-  color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 41%);
 }
 
 .dropdown-root:hover .dropdown-placeholder {
@@ -37,33 +51,22 @@
 }
 
 .dropdown-control:hover {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
 .arrow {
-  margin-left: 5px;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 25px;
-  padding: 10px 35px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.1);
+    margin-left: 5px;
 }
 
 .dropdown-menu-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 .dropdown-menu-item p {
-  font-size: 13px;
-  margin-left: 5px;
+    font-size: 13px;
+    margin-left: 5px;
 }

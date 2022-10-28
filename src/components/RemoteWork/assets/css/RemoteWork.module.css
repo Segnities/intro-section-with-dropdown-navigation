@@ -1,0 +1,88 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6vh;
+    padding-bottom: 5vh;
+    padding-left: 13vw;
+    padding-right: 8vw;
+    margin-bottom: 10vh;
+}
+
+.remote-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remote-wrapper .remote-info {
+    width: 45%;
+    height: 100%;
+}
+
+.remote-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.remote-info p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.8rem;
+}
+
+.remote-wrapper .hero-img {
+    width: 42%;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.remote-info h2 {
+    font-size: 4.9em;
+    margin-top: 20%;
+}
+
+.remote-info button {
+    padding: 15px 35px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.clients {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.clients img {
+    cursor: pointer;
+}
+
+.clients img:hover {
+    filter: invert(1);
+}
+
+.remote-info button:hover {
+    background-color: transparent;
+    outline: 1px solid hsl(0,0%,8%);
+    color: hsl(0,0%, 8%);
+}
+
+
+.hero-img img {
+    width: 100%;
+}

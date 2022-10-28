@@ -3,13 +3,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 3rem;
+  padding: 1.5rem 2.2rem;
   font-size: 14px;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .header .logo {
   width: 84px;
   height: 27px;
+  margin-right: 40px;
+
 }
 
 .menu-wrapper {
@@ -18,7 +24,7 @@
 }
 
 .menu-wrapper > * {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 .header-item {
@@ -34,17 +40,18 @@
   display: flex;
 }
 
-.sign-up > * {
-  margin: 0 10px;
+.sign-up button:not(:last-child) {
+  margin: 0 45px;
 }
 
 .btn-register {
-  padding: 10px 15px;
+  padding: 10px 25px;
   background-color: transparent;
   border: 2px solid hsl(0, 0%, 41%);
   color: hsl(0, 0%, 41%);
-  border-radius: 11px;
+  border-radius: 10px;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .btn-register:hover {
@@ -58,6 +65,7 @@
   color: hsl(0, 0%, 41%);
   background-color: transparent;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .btn-login:hover {

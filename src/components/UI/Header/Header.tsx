@@ -21,13 +21,18 @@ const Header = () => {
   ];
   const company = [
     { id: nanoid(), title: "History" },
-    { id: nanoid(), title: "OurTeam" },
+    { id: nanoid(), title: "Our Team" },
     { id: nanoid(), title: "Blog" },
   ];
   return (
     <header className={styles["header"]}>
       <div className={styles["menu-wrapper"]}>
-        <img src={Logo} alt="" className={styles["logo"]} />
+        <img
+          src={Logo}
+          alt=""
+          className={styles["logo"]}
+          onDragStart={(e) => e.preventDefault()}
+        />
         <MyDropdown title={"Features"} items={features} />
         <MyDropdown title={"Company"} items={company} />
         <div className={styles["header-item"]}>Careers</div>

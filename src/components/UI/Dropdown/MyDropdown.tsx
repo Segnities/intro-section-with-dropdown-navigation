@@ -12,9 +12,14 @@ interface myDropdownProps {
 
 const MyDropdown = (props: myDropdownProps) => {
     const [isOpen, setIsOpen] = useState(false);
+    const handleOnDropdownMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
+        setIsOpen(true);
+    }
+    const handleDropdownOnMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
+        setIsOpen(false)
+    }
     return (
-        <div className={styles['dropdown-root']} onMouseEnter={() => setIsOpen(true)}
-             onMouseLeave={() => setIsOpen(false)}>
+        <div className={styles['dropdown-root']} onMouseEnter={handleOnDropdownMouseEnter}>
             <div className={styles['dropdown-control']}>
                 <div className={styles['dropdown-placeholder']}>{props.title}</div>
                 <div className={'dropdown-arrow-wrapper'}>
@@ -22,7 +27,7 @@ const MyDropdown = (props: myDropdownProps) => {
                         <img src={IconArrowDown} alt="" className={styles['arrow']}/>}</div>
             </div>
             {
-                isOpen ? <div className={styles['dropdown-menu']}>
+                isOpen ? <div className={styles['dropdown-menu']} onMouseLeave={handleDropdownOnMouseLeave}>
                     {
                         props.items.map(dropdownMenuItem => (
                             <div className={styles['dropdown-menu-item']} key={dropdownMenuItem.id}>
