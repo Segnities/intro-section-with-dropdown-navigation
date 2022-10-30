@@ -36,8 +36,8 @@ const Header = () => {
                         onDragStart={(e) => e.preventDefault()}
                     />
                     <div className={styles['menu-options']}>
-                        <MyDropdown title={"Features"} items={features}/>
-                        <MyDropdown title={"Company"} items={company}/>
+                        <MyDropdown title={"Features"} items={features} dropdownMenuStyle={{right: 0}}/>
+                        <MyDropdown title={"Company"} items={company} dropdownMenuStyle={{left: "10px"}}/>
                         <div className={styles["header-item"]}>Careers</div>
                         <div className={styles["header-item"]}>About</div>
                     </div>

@@ -1,8 +1,12 @@
 .menu-icon {
     display: none;
+    z-index: 100;
 }
 
 .menu-icon img {
+    position: absolute;
+    top: 25px;
+    right: 8%;
     cursor: pointer;
 }
 

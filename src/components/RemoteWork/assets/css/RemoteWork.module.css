@@ -45,7 +45,7 @@
 
 .remote-info h2 {
     font-size: 4.9em;
-    margin-top: 20%;
+    margin-top: 18%;
 }
 
 .remote-info button {
@@ -96,19 +96,31 @@
         padding-bottom: 5vh;
     }
 
-
      .remote-info h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .remote-info p {
+        font-size: 1rem;
+    }
+    .remote-info button {
+        padding: 15px 25px
+    }
+
+}
+
+@media screen and (max-width: 1172px) {
+    .remote-info h2 {
+        font-size: 3.2rem;
+        margin-top: 25%;
+    }
+    .remote-info p {
         font-size: 0.9rem;
     }
-
     .remote-info button {
-        padding: 12px 25px
+        border-radius: 10px;
+        padding: 12px 25px;
     }
-
 }
 
 @media screen and (max-width: 887px) {
@@ -157,13 +169,17 @@
     .remote-wrapper .hero-img {
         width: 100%;
     }
-
-    .clients img {
-        transform: scale(0.9);
-    }
 }
 
 @media screen and (max-width: 520px) {
+    .remote-info h2 {
+        font-size: 2rem;
+    }
+
+    .remote-info p {
+        font-size: 0.8rem;
+    }
+
     .clients img {
         transform: scale(0.8);
     }
