@@ -7,14 +7,12 @@
 }
 
 .dropdown-menu {
-    max-width: 160px;
     position: absolute;
     padding: 10px 30px;
-    top: 25px;
+    top: 30px;
     border-radius: 10px;
     display: flex;
     align-items: start;
-    align-self: auto;
     flex-direction: column;
     box-shadow: 4px 5px 40px 2px rgba(0, 0, 0, 0.125);
 }

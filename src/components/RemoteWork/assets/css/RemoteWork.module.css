@@ -86,3 +86,85 @@
 .hero-img img {
     width: 100%;
 }
+
+
+@media screen and (max-width: 1230px) {
+    .content-wrapper {
+        padding-left: 6vw;
+        padding-right: 4vw;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+
+
+     .remote-info h2 {
+        font-size: 3rem;
+    }
+
+    .remote-info p {
+        font-size: 0.9rem;
+    }
+
+    .remote-info button {
+        padding: 12px 25px
+    }
+
+}
+
+@media screen and (max-width: 887px) {
+    .content-wrapper {
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 10vh;
+    }
+
+    .hero-img {
+        order: 1;
+    }
+
+    .remote-info {
+        order: 2;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .remote-info > * {
+        margin: 20px 0;
+    }
+    
+    .remote-info h2 {
+        text-align: center;
+    }
+    
+    .remote-info p {
+        text-align: center;
+    }
+
+    .remote-wrapper {
+        flex-direction: column;
+    }
+
+    .remote-wrapper .remote-info{
+        width: 100%;
+    }
+
+    .remote-info h2 {
+        margin-top: 0;
+    }
+
+    .remote-wrapper .hero-img {
+        width: 100%;
+    }
+
+    .clients img {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .clients img {
+        transform: scale(0.8);
+    }
+}

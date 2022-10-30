@@ -1,0 +1,13 @@
+.menu-icon {
+    display: none;
+}
+
+.menu-icon img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 887px) {
+    .menu-icon {
+        display: flex;
+    }
+}

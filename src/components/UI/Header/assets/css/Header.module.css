@@ -23,7 +23,12 @@
   align-items: center;
 }
 
-.menu-wrapper > * {
+.menu-options {
+  display: flex;
+  align-items: center;
+}
+
+.menu-options > * {
   margin: 0 25px;
 }
 
@@ -70,4 +75,14 @@
 
 .btn-login:hover {
     color:  hsl(0, 0%, 8%);
+}
+
+@media screen and (max-width: 887px) {
+  .menu-options {
+    display: none;
+  }
+
+  .sign-up {
+    display: none;
+  }
 }

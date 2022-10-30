@@ -16,8 +16,9 @@ const MyDropdown = (props: myDropdownProps) => {
         setIsOpen(true);
     }
     const handleDropdownOnMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-        setIsOpen(false)
+        setIsOpen(false);
     }
+
     return (
         <div className={styles['dropdown-root']} onMouseEnter={handleOnDropdownMouseEnter}>
             <div className={styles['dropdown-control']}>

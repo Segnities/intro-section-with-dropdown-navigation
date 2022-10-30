@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react';
 
-import ImageHeroDesktop from "./assets/img/image-hero-desktop.png"
+import ImageHeroDesktop from "./assets/img/image-hero-desktop.png";
+import ImageHeroMobile from "./assets/img/image-hero-mobile.png";
 
 import ClientAudiophile from "./assets/img/client-audiophile.svg";
 import ClientDatabiz from  "./assets/img/client-databiz.svg";
@@ -10,6 +11,14 @@ import ClientMeet from "./assets/img/client-meet.svg";
 import styles from "./assets/css/RemoteWork.module.css";
 
 const RemoteWork = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(()=> {
+        if(document.body.offsetWidth <= 890) {
+            setIsMobile(true);
+        }
+    }, [])
+
     return (
         <main className={styles['content-wrapper']}>
             <div className={styles['remote-wrapper']}>
@@ -28,7 +37,7 @@ const RemoteWork = () => {
                     </div>
                 </section>
                 <div className={styles['hero-img']}>
-                    <img src={ImageHeroDesktop} alt="" onDragStart={(e)=> e.preventDefault()}/>
+                    <img src={isMobile ? ImageHeroMobile : ImageHeroDesktop} alt="" onDragStart={(e)=> e.preventDefault()}/>
                 </div>
             </div>
         </main>
