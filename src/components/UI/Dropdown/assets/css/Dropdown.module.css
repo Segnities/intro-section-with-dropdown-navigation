@@ -74,3 +74,15 @@
     font-size: 13px;
     margin-left: 5px;
 }
+
+
+@media screen and (max-width: 887px) {
+    .dropdown-menu {
+        background-color: transparent;
+        box-shadow: none;
+        position: relative;
+        top: 0;
+        left: 25px;
+        right: 0;
+    }
+}
