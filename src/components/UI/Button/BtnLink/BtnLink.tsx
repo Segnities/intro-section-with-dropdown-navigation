@@ -9,7 +9,7 @@ interface btnLinkProps {
 
 const BtnLink = (props:btnLinkProps) => {
     return (
-        <button className={styles["btn-link"]} style={props.additonalStyles}><a href={'#'} aria-hidden={true} >{props.title}</a></button>
+        <button className={styles["btn-link"]} style={props.additonalStyles}><a href={'#'}>{props.title}</a></button>
     );
 };
 

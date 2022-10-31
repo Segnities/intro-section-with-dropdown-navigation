@@ -18,8 +18,8 @@ const MobileSideMenu = () => {
                         <div className={styles['mobile-side-menu-items']}>
                             <MyDropdown title={'Features'} items={features}/>
                             <MyDropdown title={'Company'} items={company}/>
-                            <a href="#" aria-hidden={true}>Careers</a>
-                            <a href="#" aria-hidden={true}>About</a>
+                            <a href="#">Careers</a>
+                            <a href="#">About</a>
                             <BtnLink title={'Login'} additonalStyles={{width: "100%"}}/>
                             <BtnTransparent title={'Register'} additonalStyles={{width: "100%"}}/>
                         </div>

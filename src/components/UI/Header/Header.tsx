@@ -28,7 +28,7 @@ const Header = () => {
                     <div className={styles['menu-options']}>
                         <MyDropdown title={"Features"} items={features} dropdownMenuStyle={{right: 0}}/>
                         <MyDropdown title={"Company"} items={company} dropdownMenuStyle={{left: "10px"}}/>
-                        <div className={styles["header-item"]}><a href="#" aria-hidden={true}>Careers</a></div>
+                        <div className={styles["header-item"]}><a href="#">Careers</a></div>
                         <div className={styles["header-item"]}><a href="#">About</a></div>
                     </div>
                 </div>

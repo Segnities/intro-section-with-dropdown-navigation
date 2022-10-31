@@ -29,7 +29,7 @@
 }
 
 .remote-info p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: hsl(0, 0%, 41%);
     line-height: 1.8rem;
@@ -44,7 +44,7 @@
 }
 
 .remote-info h2 {
-    font-size: 4.9em;
+    font-size: 4.5em;
     margin-top: 18%;
 }
 
