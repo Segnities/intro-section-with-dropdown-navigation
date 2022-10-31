@@ -13,6 +13,7 @@ import styles from "./assets/css/MenuIcon.module.css";
 const MenuIcon = () => {
     const isOpen = useSelector((state:{mobileSideMenu: {isOpen: boolean}}) => state.mobileSideMenu.isOpen);
     const dispatch = useDispatch();
+
     return (
         <div className={`${styles['menu-icon']} ${isOpen? styles['active']: ''}`}>
             <img src={!isOpen ? IconMenu : CloseIconMenu} alt="" onClick={()=> dispatch(toggleMenuAction())}/>
