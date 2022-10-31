@@ -1,0 +1,21 @@
+.btn-transparent {
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-transparent a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.btn-transparent:hover {
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+.btn-transparent:hover a {
+    color: hsl(0, 0%, 8%);
+}
