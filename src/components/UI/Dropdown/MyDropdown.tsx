@@ -30,7 +30,7 @@ const MyDropdown = (props: myDropdownProps) => {
                                     dropdownMenuItem.icon ? <div><img src={dropdownMenuItem.icon} alt=""/></div> : null
 
                                 }
-                                <p><a href="#" aria-hidden={true}>{dropdownMenuItem.title}</a></p>
+                                <p><a href="#">{dropdownMenuItem.title}</a></p>
                             </div>
                         ))
                     }

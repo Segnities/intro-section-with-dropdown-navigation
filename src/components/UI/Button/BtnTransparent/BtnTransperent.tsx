@@ -9,7 +9,7 @@ interface btnTransparentProps {
 
 const BtnTransparent = (props:btnTransparentProps) => {
     return (
-        <button className={styles["btn-transparent"]} style={props.additonalStyles}><a href="#" aria-hidden={true}>{props.title}</a></button>
+        <button className={styles["btn-transparent"]} style={props.additonalStyles}><a href="#" >{props.title}</a></button>
 
     );
 };
