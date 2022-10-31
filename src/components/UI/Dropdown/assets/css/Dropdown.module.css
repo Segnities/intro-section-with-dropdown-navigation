@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .dropdown-root {
     position: relative;
     display: flex;
@@ -46,6 +50,7 @@
     color: hsl(0, 0%, 41%);
 }
 
+
 .dropdown-root:hover .dropdown-placeholder {
     color: hsl(0, 0%, 8%);
 }
@@ -66,7 +71,12 @@
     cursor: pointer;
 }
 
-.dropdown-menu-item:hover {
+
+.dropdown-menu-item a{
+    color: hsl(0, 0%, 8%);
+}
+
+.dropdown-menu-item a:hover {
     color: hsl(0, 0%, 41%);
 }
 
