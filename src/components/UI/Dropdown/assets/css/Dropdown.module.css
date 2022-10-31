@@ -9,6 +9,7 @@ a {
     align-items: center;
     cursor: pointer;
     z-index: 1000;
+    user-select: none;
 }
 
 .dropdown-menu {
