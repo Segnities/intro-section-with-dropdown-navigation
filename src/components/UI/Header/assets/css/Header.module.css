@@ -30,6 +30,7 @@
 
 .menu-options > * {
   margin: 0 25px;
+  user-select: none;
 }
 
 .header-item {
@@ -73,5 +74,11 @@
 
   .sign-up {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 1.5rem;
   }
 }

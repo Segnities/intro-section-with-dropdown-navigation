@@ -22,6 +22,9 @@ a {
     align-items: start;
     flex-direction: column;
     box-shadow: 4px 5px 40px 2px rgba(0, 0, 0, 0.125);
+    animation-name: visible;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
 }
 
 .dropdown-control {
@@ -95,5 +98,17 @@ a {
         top: 0;
         left: 25px;
         right: 0;
+    }
+    .dropdown-menu-item > * {
+        margin: 0 5px;
+    }
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

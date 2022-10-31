@@ -8,6 +8,7 @@
     bottom: 0;
     background-color: hsla(0, 0%, 8%, 92%);
     z-index: 10;
+    transition: all 0.8s ease-out;
 }
 
 .mobile-side-menu {
@@ -17,6 +18,10 @@
     padding-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
+    transition: width 0.9s ease-in-out;
+    animation-name: open;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
 }
 
 .mobile-side-menu-items {
@@ -30,12 +35,22 @@
     margin: 15px 0;
 }
 
-.mobile-side-menu-items a{
+.mobile-side-menu-items a {
     text-decoration: none;
     font-size: 14px;
     color: hsl(0, 0%, 41%);
 }
 
 .mobile-side-menu-items a:hover {
-    color: hsl(0,0%, 8%);
+    color: hsl(0, 0%, 8%);
+}
+
+
+@keyframes open {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
 }
